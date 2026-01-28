@@ -1,0 +1,25 @@
+# Secure Notes App - Python Dependencies
+
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database
+sqlalchemy==2.0.23
+
+# MySQL driver
+pymysql==1.1.0
+cryptography==41.0.7  # Required for pymysql
+
+# PostgreSQL driver (optional, use if using PostgreSQL)
+# psycopg2-binary==2.9.9
+
+# Authentication
+bcrypt==4.1.1
+PyJWT==2.8.0
+
+# Email validation
+email-validator==2.1.0
+
+# CORS
+python-multipart==0.0.6

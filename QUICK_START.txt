@@ -1,0 +1,75 @@
+================================================================================
+                    SECURE NOTES APP - QUICK START GUIDE
+================================================================================
+
+STEP 1: INSTALL DEPENDENCIES
+-----------------------------
+Open terminal in project folder and run:
+    pip install -r requirements.txt
+
+Wait for installation to complete.
+
+
+STEP 2: START BACKEND SERVER
+-----------------------------
+Option A (Windows - Easiest):
+    Double-click: run_backend_safe.bat
+
+Option B (Any OS):
+    python start_server.py
+
+Option C (Manual):
+    cd backend
+    python main.py
+
+✅ You should see: "Uvicorn running on http://0.0.0.0:8000"
+⚠️  KEEP THIS TERMINAL WINDOW OPEN!
+
+
+STEP 3: OPEN FRONTEND
+---------------------
+Option A (Simplest):
+    1. Go to 'frontend' folder
+    2. Double-click 'index.html'
+    3. Opens in your browser
+
+Option B (Using Server):
+    1. Open NEW terminal
+    2. cd frontend
+    3. python -m http.server 8080
+    4. Open browser: http://localhost:8080
+
+
+STEP 4: TEST THE APP
+--------------------
+1. Click "Sign Up" to create account
+2. Fill in your details
+3. You'll be logged in automatically
+4. Create your first note!
+
+
+VERIFY IT'S WORKING
+-------------------
+✅ Backend: http://localhost:8000 should show JSON message
+✅ API Docs: http://localhost:8000/docs should show Swagger UI
+✅ Frontend: Login page should load
+
+
+TROUBLESHOOTING
+---------------
+❌ "ModuleNotFoundError" → Run: pip install -r requirements.txt
+❌ "Port 8000 in use" → Close other apps or change port
+❌ "Cannot connect" → Make sure backend is running (Step 2)
+❌ Backend closes immediately → Run: python diagnose.py
+
+
+NEED HELP?
+----------
+- Check RUN_STEPS.md for detailed instructions
+- Check TROUBLESHOOTING.md for common issues
+- Run: python diagnose.py to check setup
+
+
+================================================================================
+                           THAT'S IT! YOU'RE READY!
+================================================================================
